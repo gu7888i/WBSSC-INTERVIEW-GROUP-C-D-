@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBSSC Group C & D Interview Batch | Study Class by S. Ghosh</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Hind Siliguri & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'Inter', 'sans-serif'],
+                        bengali: ['Hind Siliguri', 'sans-serif'],
+                        num: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                            800: '#1e3a8a',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-bengali antialiased selection:bg-brand-700 selection:text-white">
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+    <!-- Top Brand Header -->
+    <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 text-slate-950 flex items-center justify-center shadow">
+                    <i class="fa-solid fa-graduation-cap text-base"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-base sm:text-lg tracking-tight font-num">Study Class <span class="text-amber-400">by S. Ghosh</span></span>
+                    <span class="hidden sm:inline-block text-xs text-slate-400 ml-2 border-l border-slate-700 pl-2">WBSSC Group C & D Interview Special</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>৯০০+ ভর্তি সম্পন্ন</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- STEP 1: ENTRY GATE / STUDENT NAME VERIFICATION SCREEN                 -->
+    <!-- ===================================================================== -->
+    <section id="step-1-gate" class="min-h-[calc(100vh-4rem)] flex items-center justify-center py-8 px-4 bg-gradient-to-b from-slate-900 via-brand-900 to-slate-900 text-white">
+        <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+            
+            <!-- Left / Top Highlighted Social Proof & Visual Interview Teaser -->
+            <div class="lg:col-span-6 space-y-5 text-center lg:text-left">
+                <!-- Prominent Social Proof Badge -->
+                <div class="inline-flex items-center gap-3 bg-emerald-500/20 border-2 border-emerald-400/60 text-emerald-100 px-4 py-2.5 rounded-2xl shadow-xl">
+                    <span class="w-9 h-9 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center text-sm font-bold shrink-0 shadow">
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <div class="text-left">
+                        <div class="font-bold text-sm sm:text-base text-white leading-tight">ইতিমধ্যেই ৯০০+ ছাত্রছাত্রী এই ইন্টারভিউ ব্যাচে ভর্তি হয়েছে!</div>
+                        <div class="text-[11px] sm:text-xs text-emerald-200 font-num">WBSSC Group C & D Interview Batch • 900+ Admissions Completed</div>
+                    </div>
+                </div>
+
+                <h1 class="text-2xl sm:text-4xl font-bold leading-snug text-white">
+                    WBSSC Group C & D <span class="text-amber-400">ফাইনাল ইন্টারভিউ ব্যাচ</span> ও ১২৫ পেজের ফ্রি গাইড বুক!
+                </h1>
+
+                <p class="text-blue-100 text-sm sm:text-base leading-relaxed">
+                    অভিজ্ঞ ৪ জন স্যারের সরাসরি গাইডেন্সে নিজের চাকরি পাকা করতে নিচে শুধুমাত্র তোমার নাম লিখে পরবর্তী পেজে প্রবেশ করো।
+                </p>
+
+                <!-- Visual Mock Interview & Study Photo Card -->
+                <div class="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80" alt="WBSSC Group C & D Mock Interview Board Session" onerror="this.onerror=null;this.src='https://placehold.co/800x420/1e3a8a/fbbf24?text=WBSSC+Group+C+%26+D+Live+Mock+Interview+Board';" class="w-full h-44 sm:h-52 object-cover object-center opacity-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                    <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 text-left">
+                        <div>
+                            <span class="inline-block bg-amber-400 text-slate-950 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Live Board Practice</span>
+                            <p class="text-white font-bold text-xs sm:text-sm mt-0.5">৪ জন অভিজ্ঞ বোর্ড স্যারের সরাসরি মক ইন্টারভিউ ও ১২৫ পেজের PDF গাইড</p>
+                        </div>
+                        <span class="bg-emerald-500 text-slate-950 font-extrabold text-xs px-2.5 py-1 rounded-lg shrink-0 font-num">৯০০+ ভর্তি</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right / Bottom Student Name Entry Card (ONLY Name Required, No Mobile No) -->
+            <div class="lg:col-span-6">
+                <div class="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md">ধাপ ১ / ২ • শুধুমাত্র নাম লিখুন</span>
+                            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1.5">ব্যাচের বিস্তারিত ও অ্যাডমিশন পেজ খুলুন</h2>
+                        </div>
+                        <div class="w-11 h-11 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-lock-open"></i>
+                        </div>
+                    </div>
+
+                    <form onsubmit="unlockBatchPage(event)" class="space-y-5">
+                        <div>
+                            <label for="student-name-input" class="block text-base font-bold text-slate-800 mb-2">
+                                তোমার সম্পূর্ণ নাম লেখো (Enter Your Name) <span class="text-rose-600">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <input type="text" id="student-name-input" required placeholder="যেমন: সুমন দাস / Suman Das" class="w-full pl-10 pr-4 py-4 rounded-xl border-2 border-slate-200 focus:border-brand-700 focus:ring-4 focus:ring-brand-700/10 outline-none text-base sm:text-lg font-medium transition-all">
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1.5">
+                                <i class="fa-solid fa-circle-info text-brand-600 mr-1"></i> কোনো মোবাইল নম্বর লাগবে না—শুধুমাত্র নাম লিখলেই পরবর্তী পেজ খুলে যাবে।
+                            </p>
+                            <p id="name-error-msg" class="hidden text-xs font-semibold text-rose-600 mt-1.5">
+                                <i class="fa-solid fa-circle-exclamation mr-1"></i> অনুগ্রহ করে পরবর্তী পেজে যেতে তোমার নাম লেখো।
+                            </p>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-brand-700 to-brand-800 hover:from-brand-800 hover:to-slate-900 text-white font-bold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-brand-700/30 flex items-center justify-center gap-2.5 transition-all transform active:scale-[0.99] cursor-pointer">
+                            <span>পরবর্তী পেজে যান (Enter Batch Page)</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <!-- Highlighted 900+ Admissions Footer Box inside Card -->
+                    <div class="mt-5 p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="text-xs sm:text-sm text-emerald-950 font-semibold leading-snug">
+                            ইতিমধ্যেই <span class="font-extrabold text-emerald-700 underline">৯০০+ ছাত্রছাত্রী</span> এই ইন্টারভিউ ব্যাচে ভর্তি হয়েছে!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- STEP 2: MAIN COURSE & ADMISSION PAGE (Unlocked after entering name)   -->
+    <!-- ===================================================================== -->
+    <main id="step-2-main" class="hidden pb-16">
+        
+        <!-- Personalized Welcome Banner -->
+        <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white py-6 sm:py-8 px-4 border-b border-brand-700">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-1.5">
+                    <div class="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/50 text-emerald-200 text-xs sm:text-sm font-bold px-3.5 py-1 rounded-full">
+                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                        <span>৯০০+ ছাত্রছাত্রী ইতিমধ্যেই ভর্তি হয়েছে এই ব্যাচে! (WBSSC Group C & D)</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-bold leading-snug">
+                        স্বাগতম, <span id="personalized-student-name" class="text-amber-400 underline decoration-amber-400/50 underline-offset-4">ছাত্র/ছাত্রী</span>!
+                    </h1>
+                    <p class="text-blue-100 text-sm sm:text-base">
+                        তোমার WBSSC Group C & D ইন্টারভিউ প্রস্তুতির সম্পূর্ণ রোডম্যাপ, ১২৫ পেজের ফ্রি গাইড বুক এবং অ্যাডমিশন ডিটেইলস নিচে দেওয়া হলো।
+                    </p>
+                </div>
+
+                <button onclick="returnToNameGate()" class="self-start md:self-auto inline-flex items-center gap-1.5 text-xs font-semibold bg-white/10 hover:bg-white/20 text-white px-3.5 py-2 rounded-xl border border-white/15 transition-colors cursor-pointer">
+                    <i class="fa-solid fa-pen"></i> নাম পরিবর্তন করুন
+                </button>
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 mt-8 space-y-8">
+
+            <!-- Visual Gallery & Social Proof Showcase (3 Authentic Study & Interview Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- Photo 1: Mock Interview Board -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm group">
+                    <div class="relative h-40 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80" alt="অভিজ্ঞ ৪ জন স্যারের মক ইন্টারভিউ বোর্ড" onerror="this.onerror=null;this.src='https://placehold.co/600x360/1e3a8a/ffffff?text=4+Expert+Interview+Board+Sirs';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-2.5 left-2.5 bg-brand-800/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">লাইভ মক ইন্টারভিউ</span>
+                    </div>
+                    <div class="p-3.5">
+                        <h3 class="font-bold text-slate-900 text-sm">অভিজ্ঞ ৪ জন স্যারের বোর্ড</h3>
+                        <p class="text-xs text-slate-600 mt-0.5">যাঁরা আগে সরাসরি ইন্টারভিউ বোর্ডে ইন্টারভিউ নিয়েছেন, তাঁরাই নেবেন তোমার ক্লাস।</p>
+                    </div>
+                </div>
+
+                <!-- Photo 2: 125-Page Guide Book -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm group">
+                    <div class="relative h-40 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=700&q=80" alt="১২৫ পেজের স্পেশাল ইন্টারভিউ গাইড বুক PDF" onerror="this.onerror=null;this.src='https://placehold.co/600x360/b45309/ffffff?text=125+Page+Free+Guide+Book+PDF';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-2.5 left-2.5 bg-amber-500 text-slate-950 text-[11px] font-extrabold px-2.5 py-1 rounded-lg">১২৫ পেজের PDF ফ্রি</span>
+                    </div>
+                    <div class="p-3.5">
+                        <h3 class="font-bold text-slate-900 text-sm">১২৫ পেজের স্পেশাল গাইড বুক</h3>
+                        <p class="text-xs text-slate-600 mt-0.5">ব্যাচে ভর্তি হলেই সম্পূর্ণ সাজেশন ও প্রশ্নোত্তরসহ ১২৫ পাতার PDF একদম ফ্রি।</p>
+                    </div>
+                </div>
+
+                <!-- Photo 3: 900+ Students Batch Community -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm group">
+                    <div class="relative h-40 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=80" alt="৯০০+ ছাত্রছাত্রী ইতিমধ্যেই ভর্তি হয়েছে এই ব্যাচে" onerror="this.onerror=null;this.src='https://placehold.co/600x360/065f46/ffffff?text=900%2B+Students+Admitted+Batch';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-2.5 left-2.5 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">৯০০+ ভর্তি সম্পন্ন</span>
+                    </div>
+                    <div class="p-3.5">
+                        <h3 class="font-bold text-slate-900 text-sm">৯০০+ ছাত্রছাত্রীর ভরসার ব্যাচ</h3>
+                        <p class="text-xs text-slate-600 mt-0.5">পশ্চিমবঙ্গের বিভিন্ন জেলা থেকে ইতিমধ্যেই ৯০০+ পরীক্ষার্থী ভর্তি হয়ে প্রস্তুতি নিচ্ছে।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 100% Common Guarantee Highlight Banner -->
+            <div class="bg-gradient-to-br from-amber-50 via-white to-amber-100/60 border-2 border-amber-400 rounded-3xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center text-2xl sm:text-3xl shrink-0 shadow-md">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="inline-block bg-rose-600 text-white text-xs font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+                            ১০০% কমন গ্যারান্টি • Special Assurance
+                        </span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                            “ক্লাসে যা করানো হবে, ইন্টারভিউ বোর্ডে তার বাইরে কোনো কিছু আসবে না — ১০০% কমন গ্যারান্টি!”
+                        </h2>
+                        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                            বিগত বছরের WBSSC ইন্টারভিউ বোর্ডের অভিজ্ঞতা এবং স্কুল অফিসের বাস্তব প্রশ্নাবলী বিশ্লেষণ করে প্রতিটি টপিক এমনভাবে তৈরি করা হয়েছে, যাতে বোর্ডের সামনে তোমাকে কোনো অজানা প্রশ্নের মুখে পড়তে না হয়।
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Two-Column Grid: Course Features + Payment & Admission Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Column (7 cols): Expert Panel & Batch Features -->
+                <div class="lg:col-span-7 space-y-6">
+                    
+                    <!-- Expert 4-Member Interview Panel Card -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Real Board Experience</span>
+                                <h3 class="text-xl font-bold text-slate-900">অভিজ্ঞ ৪ জন স্যারের স্পেশাল ইন্টারভিউ প্যানেল</h3>
+                            </div>
+                        </div>
+
+                        <p class="text-base text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200/80">
+                            <strong class="text-brand-800">অভিজ্ঞ ৪ জন স্যার</strong> (যাঁরা আগে সরাসরি ইন্টারভিউ বোর্ডে ইন্টারভিউ নিয়েছেন) তোমাদের <strong>রেগুলার লাইভ মক ইন্টারভিউ</strong> ও পার্সোনাল গাইডেন্স দেবেন। বোর্ডে ঢোকার আদবকেতা থেকে শুরু করে কঠিন প্রশ্নের স্মার্ট উত্তর দেওয়ার কৌশল হাতে-কলমে শেখানো হবে।
+                        </p>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1 text-center">
+                            <div class="p-3 rounded-xl bg-blue-50/70 border border-blue-100">
+                                <i class="fa-solid fa-chalkboard-user text-brand-700 text-lg mb-1"></i>
+                                <div class="text-xs font-bold text-slate-900">বোর্ড মেম্বার ১</div>
+                                <div class="text-[11px] text-slate-500">স্কুল প্রশাসন বিশেষজ্ঞ</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-blue-50/70 border border-blue-100">
+                                <i class="fa-solid fa-scale-balanced text-brand-700 text-lg mb-1"></i>
+                                <div class="text-xs font-bold text-slate-900">বোর্ড মেম্বার ২</div>
+                                <div class="text-[11px] text-slate-500">সার্ভিস রুলস ও DV</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-blue-50/70 border border-blue-100">
+                                <i class="fa-solid fa-map-location-dot text-brand-700 text-lg mb-1"></i>
+                                <div class="text-xs font-bold text-slate-900">বোর্ড মেম্বার ৩</div>
+                                <div class="text-[11px] text-slate-500">জেলা ও রাজ্য GK</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-blue-50/70 border border-blue-100">
+                                <i class="fa-solid fa-comments text-brand-700 text-lg mb-1"></i>
+                                <div class="text-xs font-bold text-slate-900">বোর্ড মেম্বার ৪</div>
+                                <div class="text-[11px] text-slate-500">পার্সোনালিটি টেস্ট</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Complete Batch Features List -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-5">
+                        <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <span>এই ইন্টারভিউ ব্যাচে ভর্তি হলে তুমি কী কী পাবে?</span>
+                        </h3>
+
+                        <div class="space-y-3.5">
+                            <!-- Feature 1: 125-Page Free Guide Book -->
+                            <div class="p-4 rounded-2xl bg-amber-50/80 border border-amber-300 flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-book"></i>
+                                </div>
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-2">
+                                        <h4 class="font-bold text-slate-900 text-base sm:text-lg">১২৫ পেজের স্পেশাল ইন্টারভিউ গাইড বুক PDF একদম ফ্রি!</h4>
+                                        <span class="bg-emerald-600 text-white text-[11px] font-bold px-2 py-0.5 rounded-full">FREE WITH BATCH</span>
+                                    </div>
+                                    <p class="text-sm text-slate-700 mt-1">ভর্তি হওয়ার সাথে সাথেই ১২৫ পাতার সম্পূর্ণ বাংলা ও ইংরেজি গাইড বুক PDF তোমার হোয়াটসঅ্যাপে পাঠিয়ে দেওয়া হবে।</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2: One-time 499 -->
+                            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-brand-700 text-white flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-base sm:text-lg">মাত্র ₹৪৯৯/- একবার পেমেন্ট (One-Time Payment)</h4>
+                                    <p class="text-sm text-slate-600 mt-1">কোনো মাসিক ফি বা হিডেন চার্জ নেই। মাত্র একবার ₹৪৯৯/- পেমেন্ট করেই সম্পূর্ণ কোর্স ও মক ইন্টারভিউয়ের অ্যাক্সেস পাবে।</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3: Regular Live + Recorded -->
+                            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-base sm:text-lg">রেগুলার লাইভ ইন্টারভিউ প্র্যাকটিস ও রেকর্ডেড ক্লাস</h4>
+                                    <p class="text-sm text-slate-600 mt-1">প্রতিদিন লাইভ মক ইন্টারভিউ সেশন থাকবে। কোনো কারণে লাইভ ক্লাস মিস করলে রেকর্ডেড ক্লাস যতবার খুশি দেখে নিতে পারবে।</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4: Full Support -->
+                            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-base sm:text-lg">ইন্টারভিউ শেষ না হওয়া পর্যন্ত ফুল সাপোর্ট</h4>
+                                    <p class="text-sm text-slate-600 mt-1">ডকুমেন্ট ভেরিফিকেশন (DV) ফর্ম ফিলাপ থেকে শুরু করে তোমার ইন্টারভিউয়ের দিন পর্যন্ত প্রতিটি পদক্ষেপে স্যারদের সরাসরি সাপোর্ট পাবে।</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Optional Preview Link if Educator uploaded the 125-page PDF URL -->
+                        <div id="direct-pdf-preview-bar" class="hidden pt-2">
+                            <button onclick="openPdfModal()" class="w-full py-3 px-4 rounded-xl bg-brand-50 hover:bg-brand-100 border border-brand-200 text-brand-800 font-bold text-sm flex items-center justify-center gap-2 transition-colors cursor-pointer">
+                                <i class="fa-solid fa-file-pdf text-rose-600 text-base"></i>
+                                <span>১২৫ পেজের গাইড বুক PDF প্রিভিউ / ডাউনলোড করুন</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (5 cols): Dedicated Payment & Admission Card -->
+                <div class="lg:col-span-5 lg:sticky lg:top-20">
+                    <div class="bg-white rounded-3xl border-2 border-brand-700 shadow-xl overflow-hidden">
+                        
+                        <!-- Top Offer Header -->
+                        <div class="bg-gradient-to-r from-brand-800 to-slate-900 text-white p-6 text-center">
+                            <span class="inline-block bg-emerald-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full tracking-wider mb-2">
+                                ৯০০+ ছাত্রছাত্রী ইতিমধ্যেই ভর্তি হয়েছে এই ব্যাচে
+                            </span>
+                            <h3 class="text-xl sm:text-2xl font-bold">WBSSC Group C & D ইন্টারভিউ ব্যাচ</h3>
+                            <div class="mt-3 flex items-baseline justify-center gap-2">
+                                <span class="text-slate-400 line-through text-lg font-num">₹1,499</span>
+                                <span class="text-4xl sm:text-5xl font-extrabold text-amber-400 font-num">₹499</span>
+                                <span class="text-xs text-blue-200 font-semibold">/ একবার পেমেন্ট</span>
+                            </div>
+                            <p class="text-xs text-emerald-300 font-semibold mt-1.5">
+                                + ১২৫ পেজের স্পেশাল গাইড বুক PDF একদম ফ্রি!
+                            </p>
+                        </div>
+
+                        <!-- Payment Number & Copy Box -->
+                        <div class="p-6 space-y-5">
+                            <div class="bg-slate-50 border-2 border-dashed border-brand-300 rounded-2xl p-4 text-center space-y-2.5">
+                                <div class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                                    PhonePe / Google Pay / UPI Number
+                                </div>
+                                <div class="flex items-center justify-center gap-3">
+                                    <span id="payment-number-text" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-wider font-num">7001946335</span>
+                                    <button onclick="copyPaymentNumber()" class="inline-flex items-center gap-1.5 bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow transition-all active:scale-95 cursor-pointer">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <span>Copy Number</span>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-center gap-3 text-xs font-semibold text-slate-600 pt-1">
+                                    <span class="inline-flex items-center gap-1 bg-purple-100 text-purple-800 px-2.5 py-0.5 rounded-md">PhonePe</span>
+                                    <span class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 px-2.5 py-0.5 rounded-md">Google Pay</span>
+                                    <span class="inline-flex items-center gap-1 bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-md">Paytm / UPI</span>
+                                </div>
+                            </div>
+
+                            <!-- Step-by-Step Admission Instructions -->
+                            <div class="space-y-3 text-sm">
+                                <div class="font-bold text-slate-900 text-base">কীভাবে ভর্তি হবে? (মাত্র ৩টি সহজ ধাপ):</div>
+                                
+                                <div class="flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-full bg-brand-700 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 font-num">1</span>
+                                    <p class="text-slate-700">উপরের <strong>7001946335</strong> নম্বরে PhonePe বা Google Pay থেকে <strong>₹499/-</strong> পেমেন্ট করো।</p>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-full bg-brand-700 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 font-num">2</span>
+                                    <p class="text-slate-700">পেমেন্ট সফল হওয়ার পর তার একটি <strong>স্ক্রিনশট (Screenshot)</strong> নাও।</p>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 font-num">3</span>
+                                    <p class="text-slate-700">নিচের সবুজ বাটনে ক্লিক করে WhatsApp-এ স্ক্রিনশটটি পাঠিয়ে দিলেই তোমাকে ব্যাচে যুক্ত করে <strong>১২৫ পেজের ফ্রি গাইড PDF</strong> দিয়ে দেওয়া হবে।</p>
+                                </div>
+                            </div>
+
+                            <!-- Primary WhatsApp Screenshot Button -->
+                            <a id="whatsapp-screenshot-btn" href="https://wa.me/917001946335" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base py-4 px-5 rounded-2xl shadow-lg shadow-emerald-600/30 flex items-center justify-center gap-2.5 transition-all transform active:scale-[0.99]">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <div class="text-left">
+                                    <div class="leading-tight">WhatsApp-এ পেমেন্ট স্ক্রিনশট পাঠান (7001946335)</div>
+                                    <div class="text-[11px] font-normal text-emerald-100">স্ক্রিনশট পাঠিয়ে এখনই ব্যাচ ও ১২৫ পেজের PDF নিন</div>
+                                </div>
+                            </a>
+
+                            <div class="text-center text-xs text-slate-500">
+                                <i class="fa-solid fa-bolt text-amber-500 mr-1"></i> পেমেন্ট ভেরিফিকেশনের ৫ মিনিটের মধ্যেই গ্রুপ ও PDF অ্যাক্সেস চালু হয়ে যাবে।
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Clean Footer with Optional Educator Admin Toggle -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+            <div class="text-center sm:text-left">
+                <span class="text-white font-bold font-num">Study Class by S. Ghosh</span>
+                <span class="block sm:inline sm:ml-2 text-slate-400">• WBSSC Group C & D Interview Guidance</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-emerald-400 font-num"><i class="fa-brands fa-whatsapp mr-1"></i>7001946335</span>
+                <button onclick="toggleAdminModal()" class="text-slate-400 hover:text-amber-400 underline underline-offset-4 transition-colors cursor-pointer">
+                    Admin / PDF Link
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Built-in PDF Viewer Modal (For 125-Page Guide Book Preview if configured) -->
+    <div id="pdf-viewer-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-2 sm:p-5">
+        <div class="bg-white w-full max-w-5xl h-[88vh] rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden">
+            <div class="bg-slate-900 text-white px-4 sm:px-6 py-3.5 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-2 min-w-0">
+                    <i class="fa-solid fa-file-pdf text-amber-400 text-lg"></i>
+                    <h3 class="font-bold text-sm sm:text-base truncate">WBSSC Group C & D ১২৫ পেজের স্পেশাল ইন্টারভিউ গাইড বুক PDF</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a id="modal-download-btn" href="#" target="_blank" rel="noopener noreferrer" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm px-3.5 py-2 rounded-xl transition-colors">
+                        <i class="fa-solid fa-download mr-1"></i> Download PDF
+                    </a>
+                    <button onclick="closePdfModal()" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center cursor-pointer">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1 bg-slate-100">
+                <iframe id="pdf-iframe" src="" class="w-full h-full border-0" title="125 Page Interview Guide PDF"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional Educator Admin Modal (Attach/Update 125-Page PDF Link) -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-base">Educator Admin — Attach 125-Page Guide PDF Link</h3>
+                    <p class="text-[11px] text-slate-300">Study Class by S. Ghosh • Optional Direct PDF Attachment</p>
+                </div>
+                <button onclick="toggleAdminModal()" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center text-white cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form onsubmit="savePdfLinkSettings(event)" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                        125-Page Guide Book PDF URL (Google Drive / Direct .pdf Link)
+                    </label>
+                    <input type="url" id="admin-pdf-url-input" placeholder="https://drive.google.com/file/d/FILE_ID/view?usp=sharing" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-brand-700 outline-none text-sm font-num">
+                    <p class="text-[11px] text-slate-500 mt-1">লিঙ্ক সেভ করলে Step 2 পেজে ১২৫ পেজের PDF প্রিভিউ/ডাউনলোড বাটন যুক্ত হবে।</p>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 pt-2">
+                    <button type="button" onclick="clearPdfLink()" class="text-xs font-semibold text-rose-600 hover:underline cursor-pointer">
+                        Remove PDF Link
+                    </button>
+                    <div class="flex items-center gap-2">
+                        <button type="button" onclick="copyShareablePortalLink()" class="px-3.5 py-2 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer">
+                            <i class="fa-solid fa-share-nodes mr-1"></i> Copy Share Link
+                        </button>
+                        <button type="submit" class="px-4 py-2 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs sm:text-sm cursor-pointer">
+                            Save PDF Link
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let studentData = {
+            name: ''
+        };
+        let attachedPdfUrl = '';
+
+        // Toast Helper
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            const styles = type === 'success'
+                ? 'bg-emerald-900 border-emerald-700 text-white'
+                : 'bg-slate-900 border-slate-700 text-white';
+            toast.className = `pointer-events-auto px-4 py-3 rounded-xl border shadow-xl text-xs sm:text-sm font-medium flex items-center justify-between gap-3 transition-all duration-300 ${styles}`;
+            toast.innerHTML = `<span>${message}</span><button onclick="this.parentElement.remove()" class="text-white/70 hover:text-white"><i class="fa-solid fa-xmark"></i></button>`;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        // Clipboard Copy Helper using document.execCommand('copy')
+        function copyToClipboard(text, successMessage) {
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            temp.style.position = 'fixed';
+            temp.style.left = '-9999px';
+            document.body.appendChild(temp);
+            temp.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMessage, 'success');
+            } catch (err) {
+                showToast('নম্বরটি কপি করা যায়নি, অনুগ্রহ করে 7001946335 লিখে নিন।', 'info');
+            }
+            document.body.removeChild(temp);
+        }
+
+        // Copy 7001946335 Payment Number
+        function copyPaymentNumber() {
+            copyToClipboard('7001946335', 'পেমেন্ট নম্বর 7001946335 কপি হয়েছে! এখন PhonePe বা GPay-তে ₹499 পেমেন্ট করুন।');
+        }
+
+        // Step 1 -> Step 2 Unlock Handler (Only Name Required)
+        function unlockBatchPage(event) {
+            event.preventDefault();
+            const nameInput = document.getElementById('student-name-input');
+            const errorMsg = document.getElementById('name-error-msg');
+
+            const cleanName = nameInput.value.trim();
+            if (!cleanName) {
+                errorMsg.classList.remove('hidden');
+                nameInput.focus();
+                return;
+            }
+
+            errorMsg.classList.add('hidden');
+            studentData.name = cleanName;
+
+            try {
+                localStorage.setItem('wbssc_student_info_v1', JSON.stringify(studentData));
+            } catch (e) {}
+
+            applyStudentPersonalization();
+            document.getElementById('step-1-gate').classList.add('hidden');
+            document.getElementById('step-2-main').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            showToast(`স্বাগতম ${studentData.name}! ব্যাচের বিস্তারিত আনলক হয়েছে।`, 'success');
+        }
+
+        // Personalize Greeting & WhatsApp Pre-filled Message
+        function applyStudentPersonalization() {
+            document.getElementById('personalized-student-name').textContent = studentData.name;
+
+            const waText = `নমস্কার S. Ghosh স্যার, আমার নাম ${studentData.name}। আমি WBSSC Group C & D ইন্টারভিউ ব্যাচে (৯০০+ স্টুডেন্ট ব্যাচ) ভর্তির জন্য ₹499/- পেমেন্ট করেছি। অনুগ্রহ করে আমাকে ব্যাচে যুক্ত করুন এবং ১২৫ পেজের ফ্রি গাইড বুক PDF-টি পাঠিয়ে দিন।`;
+            const waUrl = `https://wa.me/917001946335?text=${encodeURIComponent(waText)}`;
+            document.getElementById('whatsapp-screenshot-btn').href = waUrl;
+        }
+
+        // Allow student to edit their name
+        function returnToNameGate() {
+            document.getElementById('step-2-main').classList.add('hidden');
+            document.getElementById('step-1-gate').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Normalize Google Drive or direct PDF links
+        function normalizePdfUrl(rawUrl) {
+            const clean = (rawUrl || '').trim();
+            if (!clean) return { preview: '', download: '' };
+            const driveMatch = clean.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/) || clean.match(/drive\.google\.com\/open\?id=([a-zA-Z0-9_-]+)/);
+            if (driveMatch && driveMatch[1]) {
+                return {
+                    preview: `https://drive.google.com/file/d/${driveMatch[1]}/preview`,
+                    download: `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`
+                };
+            }
+            return { preview: clean, download: clean };
+        }
+
+        // Admin PDF Link Modal Controls
+        function toggleAdminModal() {
+            document.getElementById('admin-modal').classList.toggle('hidden');
+        }
+
+        function savePdfLinkSettings(event) {
+            event.preventDefault();
+            attachedPdfUrl = document.getElementById('admin-pdf-url-input').value.trim();
+            try {
+                localStorage.setItem('wbssc_125_pdf_url_v1', attachedPdfUrl);
+            } catch (e) {}
+
+            const url = new URL(window.location.href);
+            if (attachedPdfUrl) {
+                url.searchParams.set('pdf', attachedPdfUrl);
+            } else {
+                url.searchParams.delete('pdf');
+            }
+            window.history.replaceState({}, '', url.toString());
+
+            updatePdfPreviewBar();
+            toggleAdminModal();
+            showToast('১২৫ পেজের PDF লিঙ্ক সেভ হয়েছে!', 'success');
+        }
+
+        function clearPdfLink() {
+            attachedPdfUrl = '';
+            document.getElementById('admin-pdf-url-input').value = '';
+            try {
+                localStorage.removeItem('wbssc_125_pdf_url_v1');
+            } catch (e) {}
+            const url = new URL(window.location.href);
+            url.searchParams.delete('pdf');
+            window.history.replaceState({}, '', url.toString());
+            updatePdfPreviewBar();
+            showToast('PDF লিঙ্ক সরানো হয়েছে।', 'info');
+        }
+
+        function copyShareablePortalLink() {
+            const pdfInput = document.getElementById('admin-pdf-url-input').value.trim() || attachedPdfUrl;
+            const shareUrl = new URL(window.location.href.split('?')[0]);
+            if (pdfInput) shareUrl.searchParams.set('pdf', pdfInput);
+            copyToClipboard(shareUrl.toString(), 'Shareable Portal Link কপি হয়েছে!');
+        }
+
+        function updatePdfPreviewBar() {
+            const bar = document.getElementById('direct-pdf-preview-bar');
+            if (attachedPdfUrl) {
+                bar.classList.remove('hidden');
+            } else {
+                bar.classList.add('hidden');
+            }
+        }
+
+        function openPdfModal() {
+            if (!attachedPdfUrl) return;
+            const links = normalizePdfUrl(attachedPdfUrl);
+            document.getElementById('pdf-iframe').src = links.preview;
+            document.getElementById('modal-download-btn').href = links.download;
+            document.getElementById('pdf-viewer-modal').classList.remove('hidden');
+        }
+
+        function closePdfModal() {
+            document.getElementById('pdf-viewer-modal').classList.add('hidden');
+            document.getElementById('pdf-iframe').src = '';
+        }
+
+        // Initialize state on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            let savedPdf = '';
+            try {
+                savedPdf = localStorage.getItem('wbssc_125_pdf_url_v1') || '';
+            } catch (e) {}
+
+            attachedPdfUrl = params.get('pdf') || savedPdf;
+            document.getElementById('admin-pdf-url-input').value = attachedPdfUrl;
+            updatePdfPreviewBar();
+
+            // Pre-fill name if returning student
+            try {
+                const savedStudent = JSON.parse(localStorage.getItem('wbssc_student_info_v1') || 'null');
+                if (savedStudent && savedStudent.name) {
+                    document.getElementById('student-name-input').value = savedStudent.name;
+                }
+            } catch (e) {}
+        });
+    </script>
+</body>
+</html>
